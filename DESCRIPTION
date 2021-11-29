@@ -11,5 +11,7 @@ Encoding: UTF-8
 LazyData: true
 Depends: 
     R (>= 2.10),
-    tidyverse
+    tidyverse,
+    dygraphs,
+    colorspace
 RoxygenNote: 7.1.1
