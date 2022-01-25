@@ -11,7 +11,8 @@ The goal of Rgfs is to retrieve Financial Statistics of General Governments
 You can install the development version from [GitHub](https://github.com/) with:
 
 ``` r
-install.packages("Rgfs")
+# install.packages("devtools")
+devtools::install_github("tchiluanda/Rcofog")
 ```
 
 ## Example
