@@ -11,15 +11,15 @@
 dataAccountDistribution<- function(year=2019,exclude_country=""){
 
   .data<-serie_trabalho_full %>%
-    filter(ano == year,
-           str_sub(classification_code,1,2)%in% c("G1","G2"),
+    dplyr::filter(ano == year,
+                  stringr::str_sub(classification_code,1,2)%in% c("G1","G2"),
            !classification_code %in% c("G2M|_Z","G2G|_Z"))
 
   if (!is.null(exclude_country)){
     .data<-
       .data %>%
-      inner_join(imf_countries)%>%
-      filter(!(Country %in% exclude_country))
+      dplyr::inner_join(imf_countries)%>%
+      dplyr::filter(!(Country %in% exclude_country))
   }
   .data
 }

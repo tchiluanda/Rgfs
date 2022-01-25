@@ -8,8 +8,8 @@
 
 getEconomicZones <- function(){
   (imf_countries %>%
-     distinct(Economic_Zone) %>%
-     filter(!is.na(Economic_Zone)) %>%
-     arrange(Economic_Zone))$Economic_Zone
+     dplyr::distinct(Economic_Zone) %>%
+     dplyr::filter(!is.na(Economic_Zone)) %>%
+     dplyr::arrange(Economic_Zone))$Economic_Zone
 
 }

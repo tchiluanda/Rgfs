@@ -8,6 +8,10 @@ graphCompleteTimeSeries(.data, selected_country = "Brasil", text_max = FALSE)
 }
 \arguments{
 \item{.data}{tibble data about the evolution of account values for selected countries}
+
+\item{text_max}{logical displays the names of the top countries}
+
+\item{selected_coutry}{vector name of a coutry to be highlighted}
 }
 \value{
 time series graph.

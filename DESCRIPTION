@@ -1,17 +1,20 @@
 Package: Rgfs
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Retrieve Financial Statistics of General Governments 
 Version: 0.1.0
 Author: Fernando Almeida Barbalho
 Maintainer: Fernando Almeida Barbalho <fernando.barbalho@tesouro.gov.br>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Description: Retrieve Financial Statistics of General Governments.
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Depends: 
     R (>= 2.10),
     tidyverse,
     dygraphs,
-    colorspace
+    colorspace,
+    forcats,
+    ggrepel
+Imports: 
+    magrittr        
 RoxygenNote: 7.1.1

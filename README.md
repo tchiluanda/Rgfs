@@ -4,11 +4,11 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of Rgfs is to ...
+The goal of Rgfs is to retrieve Financial Statistics of General Governments
 
 ## Installation
 
-You can install the released version of Rgfs from [CRAN](https://CRAN.R-project.org) with:
+You can install the development version from [GitHub](https://github.com/) with:
 
 ``` r
 install.packages("Rgfs")
@@ -16,10 +16,10 @@ install.packages("Rgfs")
 
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
+Here you can see how to draw a time series graphic with GFS data:
 
 ``` r
 library(Rgfs)
-## basic example code
+dataCompleteTimeSeries(account="Despesa") %>% graphCompleteTimeSeries(selected_country="Brasil", text_max = FALSE )
 ```
 

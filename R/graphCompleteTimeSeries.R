@@ -2,6 +2,8 @@
 #'
 #' @param .data tibble data about the evolution of account values for selected countries
 #' @return time series graph.
+#' @param selected_coutry vector name of a coutry to be highlighted
+#' @param text_max logical displays the names of the top countries
 #' @examples
 #' dataCompleteTimeSeries(account="Despesa") %>% graphCompleteTimeSeries(selected_country="Brasil", text_max = FALSE )
 #' @export

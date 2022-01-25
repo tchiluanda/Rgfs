@@ -8,9 +8,9 @@
 
 getEconomicGroups <- function(){
   (imf_countries %>%
-     distinct(Economic_Group) %>%
-     filter(!is.na(Economic_Group)) %>%
-     arrange(Economic_Group))$Economic_Group
+     dplyr::distinct(Economic_Group) %>%
+     dplyr::filter(!is.na(Economic_Group)) %>%
+     dplyr::arrange(Economic_Group))$Economic_Group
 
 
 }

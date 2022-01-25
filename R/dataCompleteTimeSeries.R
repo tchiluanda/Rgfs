@@ -33,8 +33,8 @@ dataCompleteTimeSeries<- function(account="Despesa", exclude_country=""){
     .data<-
 
       .data %>%
-      inner_join(imf_countries)%>%
-      filter(!(Country %in% exclude_country))
+      dplyr::inner_join(imf_countries)%>%
+      dplyr::filter(!(Country %in% exclude_country))
 
     print("exclusão de países")
     print(unique(.data$Country))

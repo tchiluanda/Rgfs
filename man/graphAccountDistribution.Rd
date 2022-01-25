@@ -2,18 +2,22 @@
 % Please edit documentation in R/graphAccountDistribution.R
 \name{graphAccountDistribution}
 \alias{graphAccountDistribution}
-\title{Generate a graph showing a the distribution of account values for a set of countries}
+\title{Generate a graph showing the distribution of account values for a set of countries}
 \usage{
 graphAccountDistribution(.data, selected_country = "Brasil", text_max = FALSE)
 }
 \arguments{
 \item{.data}{tibble data about the distribution of account values for a set of countries}
+
+\item{text_max}{logical displays the names of the top countries}
+
+\item{selected_coutry}{vector name of a coutry to be highlighted}
 }
 \value{
 box plot graph.
 }
 \description{
-Generate a graph showing a the distribution of account values for a set of countries
+Generate a graph showing the distribution of account values for a set of countries
 }
 \examples{
 dataAccountDistribution(year=2019) \%>\% graphAccountDistribution(selected_country="Brasil", text_max = FALSE )

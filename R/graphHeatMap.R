@@ -1,6 +1,7 @@
 #' Generate a graph showing a heat map about the evolution of account values for selected countries
 #'
 #' @param .data tibble data about the evolution of account values for selected countries
+#' @param grouping char grouping option c("Estágio de desenvolvimento","Continente")
 #' @return heat map.
 #' @examples
 #' dataHeatMap(account="Despesa") %>% graphHeatMap()

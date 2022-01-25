@@ -8,6 +8,6 @@
 getDevelopmentLevels  <- function(){
 
   (imf_countries %>%
-     distinct(st_development) %>%
-     arrange(st_development))$st_development
+     dplyr::distinct(st_development) %>%
+     dplyr::arrange(st_development))$st_development
 }

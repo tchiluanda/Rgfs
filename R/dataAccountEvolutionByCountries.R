@@ -40,11 +40,11 @@ dataAccountEvolutionByCountries <-  function( account="Despesa", continent ="", 
     print("Por conta")
     df_graph <-
       df_graph %>%
-      arrange(translation_stn) %>%
-      mutate(tipo= "Por conta") %>%
-      select(ano,tipo, translation_stn, Country, num_value) %>%
-      pivot_wider(names_from = translation_stn, values_from =  num_value,values_fn = mean) %>%
-      arrange(ano)
+      dplyr::arrange(translation_stn) %>%
+      dplyr::mutate(tipo= "Por conta") %>%
+      dplyr::select(ano,tipo, translation_stn, Country, num_value) %>%
+      tidyr::pivot_wider(names_from = translation_stn, values_from =  num_value,values_fn = mean) %>%
+      dplyr::arrange(ano)
 
 
   } else{
@@ -53,7 +53,7 @@ dataAccountEvolutionByCountries <-  function( account="Despesa", continent ="", 
     df_graph <-
       df_graph%>%
       dplyr::arrange(ISO_Code) %>%
-      mutate(tipo= "Por país") %>%
+      dplyr::mutate(tipo= "Por país") %>%
       dplyr::select(ano, tipo, translation_stn, ISO_Code, num_value) %>%
       tidyr::pivot_wider(names_from = ISO_Code, values_from =  num_value,values_fn = mean) %>%
       dplyr::arrange(ano)

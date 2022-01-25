@@ -8,6 +8,8 @@ graphHeatMap(.data, grouping = "Estágio de desenvolvimento")
 }
 \arguments{
 \item{.data}{tibble data about the evolution of account values for selected countries}
+
+\item{grouping}{char grouping option c("Estágio de desenvolvimento","Continente")}
 }
 \value{
 heat map.
